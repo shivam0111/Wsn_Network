@@ -1,0 +1,49 @@
+<h3>Add parameters</h3>
+<form method="post" action="/movie/add">
+    <!-- TITLE -->
+    <label>CLUSTER-HEAD</label><br> 
+
+    <input type="text" name="title">
+    <br>
+    <!-- YEAR -->
+    <label>Energy</label><br>
+    <input type="text" name="year">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h3>Add parameters</h3>
+<form method="post" action="/person/add">
+    <!-- ADD ACTOR NAME -->
+    <label>NODE-2</label><br>
+    <input type="text" name="name">
+    
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h3>Add relationships</h3>
+<form method="post" action="/movie/person/add">
+    <label>CLUSTER-HEAD </label><br>
+    <input type="text" name="title">
+    <br>
+    <label>To which Node </label><br>
+    <input type="text" name="name">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+<h3>Node number from related</h3>
+<ul>
+    <% movies.forEach(function(movie){%>
+    <li><%= movie.title %></li>
+   <% }) %>
+</ul>
+
+<h3>to which node</h3>
+<ul>
+    <% persons.forEach(function(person){%>
+    <li><%= person.name %></li>
+   <% }) %>
+</ul>
